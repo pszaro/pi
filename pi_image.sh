@@ -29,6 +29,18 @@ sudo aptitude -y install dnsutils whois
 echo "Installing Development Environment"
 sudo aptitude -y install vim git git-all 
 
+# Increase history
+echo "HISTSIZE=5000" >> /root/.bashrc
+
+#speed up boot
+setupcon --force
+
+# USB TTY
+/sbin/getty -L ttyUSB0 115200 vt100 &
+
+# Bluetooth Scan
+hcitool scan
+
 echo "Doing Debian Updates (slow) ..."
 sudo aptitude -y update
 sudo aptitude -y upgrade
