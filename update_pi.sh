@@ -1,3 +1,10 @@
+#/bin/sh
+#
+# Description: Script to update Raspberry Pi 
+#
+# Comments:
+#
+
 echo "Cleaning up previously downloaded packages in /var/cache/apt/archives"
 sudo apt-get clean
 
