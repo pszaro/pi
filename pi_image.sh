@@ -1,3 +1,10 @@
+#/bin/sh
+#
+# Description: Initial Script executed when new Raspberry Pi comes online
+#
+# Comments:
+#
+
 echo "Doing Debian Updates (slow) ..."
 sudo aptitude -y update
 sudo aptitude -y upgrade
@@ -21,7 +28,7 @@ echo "Installing USB WLAN Firmware"
 sudo aptitude -y install zd1211-firmware firmware-ralink firmware-realtek
 
 echo "Installing Web Servers"
-sudo aptitude -y install apache2 lighttpd nginx
+sudo aptitude -y install apache2 lighttpd 
 
 echo "Installing Standard Tools"
 sudo aptitude -y install dnsutils whois bluetooth
