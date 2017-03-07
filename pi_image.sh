@@ -21,13 +21,16 @@ echo "Installing USB WLAN Firmware"
 sudo aptitude -y install zd1211-firmware firmware-ralink firmware-realtek
 
 echo "Installing Web Servers"
-sudo aptitude -y install apache2 
+sudo aptitude -y install apache2 lighttpd nginx
 
 echo "Installing Standard Tools"
-sudo aptitude -y install dnsutils whois
+sudo aptitude -y install dnsutils whois bluetooth
 
 echo "Installing Development Environment"
 sudo aptitude -y install vim git git-all 
+
+echo "Installing System/Security"
+sudo aptitude -y install tcpdump nmap python-nmap
 
 # Increase history
 echo "HISTSIZE=5000" >> /root/.bashrc
