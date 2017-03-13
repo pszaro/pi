@@ -39,6 +39,13 @@ sudo aptitude -y install vim git git-all
 echo "Installing System/Security"
 sudo aptitude -y install tcpdump nmap python-nmap
 
+echo "Installing Ansible"
+#Add following to /etc/apt/sources.list
+# "deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main" >> /etc/apt/sources.list
+#sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 93C4A3FD7BB9C367
+#sudo apt-get update
+#sudo apt-get install ansible
+
 # Increase history
 echo "HISTSIZE=5000" >> /root/.bashrc
 
@@ -50,6 +57,13 @@ setupcon --force
 
 # Bluetooth Scan
 hcitool scan
+
+# setup .ssh dir for key dump
+[ ! -d .sshi ] && mkdir .ssh
+cd .ssh
+touch authorized_keys
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/authorized_keys
 
 echo "Doing Debian Updates (slow) ..."
 sudo aptitude -y update
