@@ -13,3 +13,6 @@ sudo apt-get update
 
 echo "Upgrading `uname -n` installed packages to the latest levels..."
 sudo apt-get dist-upgrade
+
+# Creating file for future reference related to Ansible
+touch /tmp/updatepi
