@@ -12,9 +12,6 @@ sudo aptitude -y dist-upgrade
 sudo aptitude -y autoclean
 sudo aptitude -y full-upgrade
 
-# Increase history
-echo "HISTSIZE=5000" >> /root/.bashrc
-
 #speed up boot
 setupcon --force
 
