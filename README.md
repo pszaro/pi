@@ -5,13 +5,13 @@ Collection of scripts I use which allows me to quickly setup a Raspberry Pi
                    
 GIT Repo Location
 -----------------
-github.com/pszaro/pi.git 
+https://github.com/pszaro/pi.git
                    
 List of Scripts
 -----------------
 
-  - [GenReadMe.sh]:
-   This script generates a dynamic README file.
+  - [download_latest_raspbian.sh]:
+   Checks if image is local and if not, will download
 
   - [pi_image.sh]:
    Initial Script executed when new Raspberry Pi comes online
