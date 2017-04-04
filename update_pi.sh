@@ -1,6 +1,6 @@
 #/bin/sh
 #
-# Description: Script to update Raspberry Pi 
+# Description: Script to update Raspberry Pi
 #
 # Comments:
 #
@@ -15,4 +15,4 @@ echo "Upgrading `uname -n` installed packages to the latest levels..."
 sudo apt-get dist-upgrade
 
 # Creating file for future reference related to Ansible
-touch /tmp/updatepi
+touch /var/tmp/updatepi
