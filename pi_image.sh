@@ -36,4 +36,4 @@ sudo aptitude -y autoclean
 sudo aptitude -y full-upgrade
 
 # Creating file for future reference related to Ansible
-touch /tmp/piimage
+touch /var/tmp/piimage
