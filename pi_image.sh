@@ -22,7 +22,7 @@ setupcon --force
 hcitool scan
 
 # setup .ssh dir for key dump
-[ ! -d .sshi ] && mkdir .ssh
+[ ! -d .ssh ] && mkdir .ssh
 cd .ssh
 touch authorized_keys
 chmod 700 ~/.ssh
